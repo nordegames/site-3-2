@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PS2 Games Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>🎮 PS2 Games Store</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="busca" placeholder="🔎 Buscar jogo..." />
+  </header>
+
+  <section class="banner">
+    <h2>Jogos em Destaque</h2>
+    <div id="catalogo">
+      <div class="jogo" data-nome="God of War">
+        <img src="https://github.com/andercard0/Playstation2_3DCovers/blob/main/covers%20%5BPacked%5D/God%20of%20War%20(USA).png?raw=true" alt="God of War" />
+        <p>God of War - R$5,00</p>
+        <button class="adicionar" data-nome="God of War" data-preco="5.00">Comprar</button>
+		 <button class="detalhes" data-jogo="god-of-war">Detalhes</button>
+</div>
+<div id="popup" class="popup oculto">
+  <div class="popup-conteudo">
+    <span id="fechar">✖</span>
+    <h3 id="titulo-jogo">God of War</h3>
+    <p><strong>Gênero:</strong> Ação / Aventura</p>
+    <p><strong>Lançamento:</strong> 2005</p>
+    <p><strong>Classificação:</strong> 18+</p>
+    <p><strong>Descrição:</strong> Embarque na jornada épica de Kratos, enfrentando deuses em busca de redenção.</p>
+  </div>
+</div>
+      </div>
+      <div class="jogo" data-nome="GTA San Andreas">
+        <img src="https://github.com/andercard0/Playstation2_3DCovers/blob/main/covers%20%5BPacked%5D/Grand%20Theft%20Auto%20-%20San%20Andreas%20(USA).png?raw=true" alt="GTA San Andreas" />
+        <p>GTA San Andreas - R$5,00</p>
+        <button class="adicionar" data-nome="GTA San Andreas" data-preco="5.00">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="carrinho">
+    <h2>🛒 Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p>Total: R$<span id="total">0.00</span></p>
+    <button id="finalizar">Finalizar Compra</button>
+  </section>
+
+  <section class="login">
+    <h2>🔐 Login</h2>
+    <form>
+      <input type="text" placeholder="Usuário" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 NordeGames Store</p>
+  </footer>
+
+  <audio id="coin" src="sounds/coin.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
